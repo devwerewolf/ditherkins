@@ -1,6 +1,6 @@
 <script>
   // Lib
-  import { createEventDispatcher, onMount } from "svelte";
+  import { createEventDispatcher } from "svelte";
   
   // Props
   export let label = "";

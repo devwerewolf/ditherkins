@@ -1,6 +1,5 @@
 <script>
 	// Lib
-	import { onMount } from "svelte";
   import Wave from "@foobar404/wave";
 
 	// Components
