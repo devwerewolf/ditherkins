@@ -39,7 +39,7 @@
 <header>
 	<img src="images/plant.png" height="128px" width="128px" alt="Dithered">
 	<div class="title-card">
-		<h1>The Official Dither Soundboard™</h1>
+		<h1>The Dithercraft Soundboard™</h1>
 		<h2>Made with 💜 by WerewolfDev</h2>
 	</div>
 </header>
