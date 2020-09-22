@@ -7,7 +7,15 @@
 	import HexButton from "./components/HexButton.svelte";
 	
 	// Variables
-	let labels = ["#", "e", "1", "0", "0", "9", "8"];
+	let hexButtons = [
+		{ label: "#", soundBite: "hit1" },
+		{ label: "e", soundBite: "celebrate2" },
+		{ label: "1", soundBite: "celebrate1" },
+		{ label: "0", soundBite: "idle1" },
+		{ label: "0", soundBite: "idle2" },
+		{ label: "9", soundBite: "celebrate3" },
+		{ label: "8", soundBite: "celebrate4" },
+	];
 	let height;
 	let width;
 	let wave;
@@ -34,13 +42,9 @@
 </header>
 
 <main>
-	<HexButton label="#" soundBite="hit1" on:playSoundBite={onPlaySoundBite}/>
-	<HexButton label="e" soundBite="celebrate2" on:playSoundBite={onPlaySoundBite}/>
-	<HexButton label="1" soundBite="celebrate1"/>
-	<HexButton label="0" soundBite="idle1"/>
-	<HexButton label="0" soundBite="idle2"/>
-	<HexButton label="9" soundBite="celebrate3"/>
-	<HexButton label="8" soundBite="celebrate4"/>
+	{#each hexButtons as hexButton}
+		<HexButton {...hexButton} on:playSoundBite={onPlaySoundBite}/>
+	{/each}
 </main>
 
 <canvas id="sound-visualizer" {height} {width}></canvas>
