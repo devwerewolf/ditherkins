@@ -39,6 +39,10 @@
 
 <header>
 	<img src="images/plant.png" height="128px" width="128px" alt="Dithered">
+	<div class="title-card">
+		<h1>The Official Dither Soundboard™</h1>
+		<h2>Made with 💜 by WerewolfDev</h2>
+	</div>
 </header>
 
 <main>
@@ -51,9 +55,19 @@
 
 <style>
 	header {
+		color: white;
+		position: absolute;
+	}
+	
+	header img {
 		position: fixed;
 		top: 0;
 		right: 0;
+	}
+	
+	header .title-card {
+		font-size: 2vh;
+		transform: translateY(12vh);
 	}
 	
 	main {
