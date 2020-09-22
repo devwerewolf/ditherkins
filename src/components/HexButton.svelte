@@ -35,12 +35,12 @@
   main {
     display: inline-block;
     cursor: pointer;
-    transform: translateY(31vh);
+    transform: translateY(32vh);
     user-select: none;
   }
   
   h1 {
 		color: #e10098;
-		font-size: 10vh;
+		font-size: 11vh;
   }
 </style>

@@ -57,6 +57,7 @@
 	header {
 		color: white;
 		position: absolute;
+		width: 100%;
 	}
 	
 	header img {
@@ -66,8 +67,13 @@
 	}
 	
 	header .title-card {
-		font-size: 2vh;
-		transform: translateY(12vh);
+		background-color: rgba(0, 0, 0, 0.5);
+		font-size: 3vh;
+		transform: translateY(52vh);
+	}
+	
+	header .title-card * {
+		text-align: center;
 	}
 	
 	main {
